@@ -41,12 +41,26 @@ main h2 {
 }
 
 .ms_cella {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.ms_cella.easy {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.ms_cella.medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.ms_cella.hard {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 }
 
 .ms_clicked {

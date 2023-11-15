@@ -25,14 +25,20 @@
 <body>
     <header class="p-2">
         <img src="img/logo.png" alt="Logo">
-        <h1 class="fw-bold m-0">Prato Fiorito</h1>
-        <button id="play" class="ms-auto">Play</button>
+        <h1 class="fw-bold m-0 me-auto">Prato Fiorito</h1>
+        <label for="mode">Difficoltà:</label>
+        <select id="mode" class="ms-1 me-2">
+            <option value="easy">Facile</option>
+            <option value="medium" selected>Media</option>
+            <option value="hard">Difficile</option>
+        </select>
+        <button id="play">Play</button>
     </header>
     <main>
         <div id="ms_griglia">
             <!-- Celle inserite da JS -->
         </div>
-        <h2 id="messaggio" class="m-0">Clicca su <span class="play">play</span> per iniziare a giocare!</h2>
+        <h2 id="messaggio" class="m-0">Clicca su play per iniziare a giocare!</h2>
     </main>
     <footer class="text-end p-2">
         Made with &hearts; by <a href="*" target="_blank" rel="noopener noreferrer">Boolean</a>: classe #110
